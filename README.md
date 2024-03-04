@@ -3,7 +3,7 @@
 ## POST
 #### Register
 ```http
-  POST https://nutech-abiyyi.vercel.app/register
+https://nutech-abiyyi.vercel.app/register
 ```
 | Parameter | Type     |
 | :-------- | :------- | 
@@ -15,7 +15,7 @@
 #### Login
 
 ```http
-  POST https://nutech-abiyyi.vercel.app/login
+https://nutech-abiyyi.vercel.app/login
 ```
 | Parameter | Type     |
 | :-------- | :------- | 
@@ -25,7 +25,7 @@
 #### TopUp
 ##### BearerToken
 ```http
-  POST https://nutech-abiyyi.vercel.app/topup
+https://nutech-abiyyi.vercel.app/topup
 ```
 | Parameter | Type     |
 | :-------- | :------- | 
@@ -34,7 +34,7 @@
 #### Transaction
 ##### BearerToken
 ```http
-  POST https://nutech-abiyyi.vercel.app/transaction
+https://nutech-abiyyi.vercel.app/transaction
 ```
 | Parameter | service (string)    |
 | :-------- | :------- | 
@@ -43,13 +43,13 @@
 ## GET
 #### Profile
 ```http
-  GET https://nutech-abiyyi.vercel.app/profile
+https://nutech-abiyyi.vercel.app/profile
 ```
 ##### BearerToken
 
 #### Balance
 ```http
-  GET https://nutech-abiyyi.vercel.app/balance
+https://nutech-abiyyi.vercel.app/balance
 ```
 ##### BearerToken
 #
