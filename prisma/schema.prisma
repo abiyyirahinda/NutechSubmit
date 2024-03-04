@@ -1,0 +1,33 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String  @id @default(cuid())
+  email         String  @unique
+  first_name    String
+  last_name     String
+  password      String
+  balance       Int?    @default(0)
+  profile_image String?
+  transactions  Transaction[]
+}
+
+model Transaction {
+  id               String  @id @default(cuid())
+  invoice_number   String  @unique
+  service_code     String
+  service_name     String
+  transaction_type String
+  total_amount     Int
+  created_on       DateTime @default(now())
+  user             User    @relation(fields: [userEmail], references: [email])
+  userEmail        String
+}
+
